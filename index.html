@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chinmoy Ghosh Shuvo · Urban heat, remote sensing and planning</title>
+  <meta name="description" content="Chinmoy Ghosh Shuvo, urban planner (BURP, KUET). Research on surface urban heat islands, remote sensing and machine learning for land-use change and climate adaptation in coastal cities. Research, projects and CV.">
+
+  <!-- Link previews (Facebook, LinkedIn, WhatsApp, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chinmoyghoshshuvo.github.io/">
+  <meta property="og:title" content="Chinmoy Ghosh Shuvo · Urban heat, remote sensing and planning">
+  <meta property="og:description" content="Research on surface urban heat islands, remote sensing and machine learning for land-use change and climate adaptation in coastal cities.">
+  <meta property="og:image" content="https://chinmoyghoshshuvo.github.io/images/suhi-chittagong-karachi.jpg">
+  <meta property="og:image:width" content="1542">
+  <meta property="og:image:height" content="1083">
+  <meta property="og:image:alt" content="Study area map of Chittagong and Karachi, two coastal megacities in South Asia.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================
+     TOP MENU (stays at the top while scrolling)
+     ============================================================ -->
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="masthead__name" href="#home">C. G. Shuvo</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="#about"><span class="nav-num">01</span>About</a></li>
+        <li><a href="#experience"><span class="nav-num">02</span>Experience</a></li>
+        <li><a href="#portfolio"><span class="nav-num">03</span>Portfolio</a></li>
+        <li><a href="#research"><span class="nav-num">04</span>Research</a></li>
+        <li><a href="#academic"><span class="nav-num">05</span>Academic</a></li>
+        <li><a href="#presentations"><span class="nav-num">06</span>Talks</a></li>
+        <li><a href="#activities"><span class="nav-num">07</span>Activities</a></li>
+        <li><a href="#contact"><span class="nav-num">08</span>Contact</a></li>
+        <li><a class="nav-cv" href="Chinmoy_Ghosh_CV.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- thin heat-coloured bar that fills as the visitor scrolls -->
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+</header>
+
+<main id="main" class="sheet">
+
+<!-- ============================================================
+     HOME
+     ============================================================ -->
+<section id="home" class="hero" aria-labelledby="name">
+  <!-- Animated isotherm lines behind the hero (decoration only) -->
+  <svg class="hero__contours" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <g fill="none" stroke-linecap="round">
+      <path class="iso iso--hot" d="M820 300c0-62 52-104 120-104s128 40 128 104-60 110-128 110-120-48-120-110z"/>
+      <path class="iso iso--hot" d="M760 300c0-104 86-168 184-168s186 66 186 168-88 176-186 176-184-72-184-176z"/>
+      <path class="iso" d="M690 296c0-150 120-236 256-236s252 92 252 236-122 250-252 250S690 446 690 296z"/>
+      <path class="iso" d="M610 300c0-196 160-300 330-300s330 118 330 300-162 330-330 330S610 496 610 300z"/>
+      <path class="iso iso--faint" d="M520 304c0-250 204-376 420-376s420 150 420 376-206 410-420 410S520 554 520 304z"/>
+      <path class="iso iso--faint" d="M420 310c0-300 250-460 520-460s520 180 520 460-250 500-520 500S420 610 420 310z"/>
+    </g>
+  </svg>
+  <p class="hero__coords" aria-hidden="true"><span data-coord>22.3569° N · 91.7832° E</span></p>
+  <!-- ==========================================================
+       PHOTO
+       To change it, upload a new  images/photo.jpg  (portrait,
+       4:5 shape, about 760 x 950 px, under 200 KB). If the new
+       photo has a different size, change width/height below.
+       ========================================================== -->
+  <figure class="hero__photo">
+    <img class="portrait" src="images/photo.jpg" width="760" height="950" alt="Portrait of Chinmoy Ghosh Shuvo">
+  </figure>
+
+  <div class="hero__main">
+    <div class="hero__top">
+      <p class="kicker">Geospatial enthusiast · Urban planner</p>
+      <p class="actions hero__actions">
+        <a class="btn btn--solid" href="Chinmoy_Ghosh_CV.pdf">Download CV</a>
+        <a class="btn" href="https://github.com/ChinmoyGhoshShuvo">GitHub</a>
+        <a class="btn" href="mailto:chinmoyghoshshuvo@gmail.com">Email</a>
+      </p>
+    </div>
+    <h1 id="name" class="hero__name">Chinmoy Ghosh Shuvo</h1>
+    <p class="hero__motto">Think critically. Execute efficiently.</p>
+    <div class="scalebar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <aside class="hero__legend" aria-labelledby="interests-h">
+    <div class="legend">
+      <h2 id="interests-h" class="legend__title">Research interests</h2>
+      <ul class="legend__list">
+        <li><span class="sym sym--heat" aria-hidden="true"></span>Urban heat</li>
+        <li><span class="sym sym--fill" aria-hidden="true"></span>Environmental modelling</li>
+        <li><span class="sym sym--line" aria-hidden="true"></span>Climate change</li>
+        <li><span class="sym sym--hatch" aria-hidden="true"></span>Remote sensing</li>
+        <li><span class="sym sym--grid" aria-hidden="true"></span>Drone image processing</li>
+        <li><span class="sym sym--dots" aria-hidden="true"></span>Deep learning</li>
+        <li><span class="sym sym--wave" aria-hidden="true"></span>Coastal adaptation</li>
+        <li><span class="sym sym--leaf" aria-hidden="true"></span>Urban ecology</li>
+        <li><span class="sym sym--ml" aria-hidden="true"></span>Machine learning</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<!-- ============================================================
+     KEY NUMBERS (they count up when scrolled into view)
+     To change one, edit the number in data-count AND the
+     number between the tags (the second one is what shows if
+     the script does not run).
+     ============================================================ -->
+<section class="stats" aria-label="Key numbers">
+  <div class="stat"><p class="stat__num"><span data-count="17">17</span></p><p class="stat__label">Projects on this page</p></div>
+  <div class="stat"><p class="stat__num"><span data-count="3">3</span></p><p class="stat__label">Ongoing research projects</p></div>
+  <div class="stat"><p class="stat__num"><span data-count="2">2</span><small>+</small></p><p class="stat__label">Years in professional practice</p></div>
+  <div class="stat"><p class="stat__num"><span data-count="7.5" data-decimals="1">7.5</span></p><p class="stat__label">IELTS overall band</p></div>
+</section>
+
+<!-- Moving strip of tools and places. Edit the words freely;
+     the list is written twice so the loop looks seamless. -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>ArcGIS Pro</span><span>QGIS 3D</span><span>Google Earth Engine</span><span>Python</span><span>R</span><span>Random Forest</span><span>SVM</span><span>AHP</span><span>Landsat</span><span>MODIS</span><span>Kobo Toolbox</span><span>Drone survey</span><span>Chattogram</span><span>Khulna</span><span>Karachi</span><span>Khagrachhari</span>
+    <span>ArcGIS Pro</span><span>QGIS 3D</span><span>Google Earth Engine</span><span>Python</span><span>R</span><span>Random Forest</span><span>SVM</span><span>AHP</span><span>Landsat</span><span>MODIS</span><span>Kobo Toolbox</span><span>Drone survey</span><span>Chattogram</span><span>Khulna</span><span>Karachi</span><span>Khagrachhari</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     01 ABOUT
+     ============================================================ -->
+<section id="about" class="section" aria-labelledby="about-h">
+  <h2 id="about-h" class="section__title"><span class="section__num">01</span> About</h2>
+  <div class="section__body about">
+    <p class="about__bio">I am an urban planner based in Dhaka, Bangladesh, working as an Assistant Urban Planner at Sheltech Consultants on two national planning projects, UTMIDP and IUGIP, and part-time as a Junior Development Consultant at Orbix Consultancy. I hold a Bachelor of Urban and Regional Planning from KUET. My research uses satellite data, Google Earth Engine and machine learning to study urban heat islands and land-use change, and I presented a Chittagong–<wbr>Karachi heat island study at an international workshop in Thailand.</p>
+
+    <dl class="facts">
+      <div>
+        <dt>Education</dt>
+        <dd>Bachelor of Urban and Regional Planning (BURP), Khulna University of Engineering &amp; Technology (KUET), 2019–2024 · CGPA 3.58/4.00</dd>
+      </div>
+      <div>
+        <dt>Thesis</dt>
+        <dd><cite>Renewable Energy Resources in Bangladesh: Assessing the Most Efficient Renewable Energy Resources Using AHP</cite> (2024) · <a href="#r-thesis">see project</a></dd>
+      </div>
+      <div>
+        <dt>Current roles</dt>
+        <dd>Assistant Urban Planner, Sheltech Consultants (Pvt.) Ltd, Dhaka, 2024–present<br>Junior Development Consultant (part-time), Orbix Consultancy (Pvt.) Ltd, Dhaka, 2026–present · <a href="#experience">see experience</a></dd>
+      </div>
+      <div>
+        <dt>Standardized tests</dt>
+        <dd>IELTS 7.5 overall (Listening 8.5 · Reading 8.5 · Writing 7.0 · Speaking 6.5)</dd>
+      </div>
+      <div>
+        <dt>Membership</dt>
+        <dd>Member, Bangladesh Institute of Planners (BIP) · Joint Secretary, Alumni Association of KUET Planners</dd>
+      </div>
+    </dl>
+
+    <div class="skills">
+      <h3 class="skills__title">Skills</h3>
+      <dl class="skills__grid">
+        <div>
+          <dt>GIS &amp; remote sensing</dt>
+          <dd>ArcGIS Pro, QGIS (incl. 3D and PyQGIS), Google Earth Engine, Landsat/MODIS/Sentinel-2 processing</dd>
+        </div>
+        <div>
+          <dt>Programming</dt>
+          <dd>Python (GDAL, NumPy, rasterio, pandas, matplotlib), R, Google Earth Engine JavaScript</dd>
+        </div>
+        <div>
+          <dt>Statistics &amp; ML</dt>
+          <dd>Random Forest, ANN, AHP, spatial statistics (hotspot, Local Moran's I), SPSS, R</dd>
+        </div>
+        <div>
+          <dt>Visualisation</dt>
+          <dd>Adobe Illustrator, Lumion, FFmpeg</dd>
+        </div>
+        <div>
+          <dt>Field data &amp; surveys</dt>
+          <dd>Kobo Toolbox, questionnaire surveys, participatory (PRA) tools, drone survey</dd>
+        </div>
+        <div>
+          <dt>Reporting</dt>
+          <dd>Microsoft Office (Word, Excel, PowerPoint) for reports, data and technical presentations</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 PROFESSIONAL EXPERIENCE (timeline)
+     ------------------------------------------------------------
+     TEMPLATE: copy one <li class="tl__item"> ... </li> block,
+     paste it at the top of the list (newest first) and change
+     the words. Add class "tl__item--now" for a current job.
+     ============================================================ -->
+<section id="experience" class="section" aria-labelledby="experience-h">
+  <h2 id="experience-h" class="section__title"><span class="section__num">02</span> Experience</h2>
+  <div class="section__body">
+    <ol class="timeline">
+      <li class="tl__item tl__item--now">
+        <p class="tl__when">Feb 2026 – present · Part-time</p>
+        <h3 class="tl__role">Junior Development Consultant</h3>
+        <p class="tl__org">Orbix Consultancy (Pvt.) Ltd · Dhaka</p>
+        <ul class="tl__list">
+          <li>Identifying and contacting potential partners and government stakeholders to expand the firm's reach.</li>
+          <li>Helping develop research-based project proposals.</li>
+        </ul>
+      </li>
+      <li class="tl__item tl__item--now">
+        <p class="tl__when">Jul 2024 – present · Full-time</p>
+        <h3 class="tl__role">Assistant Urban Planner</h3>
+        <p class="tl__org">Sheltech Consultants (Pvt.) Ltd · Dhaka</p>
+        <div class="tl__projects">
+          <div class="tl__project">
+            <p class="tl__pname">Upazila Town (Non-Municipal) Master Plan Preparation and Basic Infrastructure Development Project <abbr title="Upazila Town (Non-Municipal) Master Plan Preparation and Basic Infrastructure Development Project">(UTMIDP)</abbr></p>
+            <ul class="tl__list">
+              <li>Carrying out environmental suitability and ecological impact assessments of proposed development plans.</li>
+              <li>Using Kobo Toolbox, Excel and GIS to collect, analyse and visualise planning data.</li>
+            </ul>
+          </div>
+          <div class="tl__project">
+            <p class="tl__pname">Improving Urban Governance and Infrastructure Project <abbr title="Improving Urban Governance and Infrastructure Project">(IUGIP)</abbr></p>
+            <ul class="tl__list">
+              <li>Analysing urban trends with R and ArcGIS Pro and mapping the spatial effects of upcoming developments.</li>
+              <li>Running community workshops and bringing local feedback into regional planning approaches.</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="tl__item">
+        <p class="tl__when">Apr 2023 · One month</p>
+        <h3 class="tl__role">Intern</h3>
+        <p class="tl__org">Center for Environmental and Geographic Information Services (CEGIS) · Dhaka</p>
+        <ul class="tl__list">
+          <li>Drone survey training.</li>
+          <li>Using GIS to analyse geographic distributions and patterns.</li>
+          <li>Map digitising.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 PORTFOLIO PROJECTS (looping videos)
+     ------------------------------------------------------------
+     TEMPLATE: copy one <article class="media ..."> block below.
+     The video needs:  images/NAME.mp4  (small, silent, under
+     3 MB) and a still image  images/NAME.jpg  used as poster.
+     "media media--wide" = wide video; "media media--side" = tall
+     video with text beside it.
+     ============================================================ -->
+<section id="portfolio" class="section" aria-labelledby="portfolio-h">
+  <h2 id="portfolio-h" class="section__title"><span class="section__num">03</span> Portfolio projects</h2>
+  <div class="section__body">
+
+    <article class="media media--wide">
+      <div class="media__frame media__frame--dark">
+        <video width="960" height="540" muted loop playsinline preload="none" poster="images/chattogram-lst-3d.jpg" data-autoplay aria-label="Animated 3D map of April land surface temperature across Chattogram District, 2015 to 2025, with side panels tracking the district median temperature and heat island intensity.">
+          <source src="images/chattogram-lst-3d.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media__text">
+        <div>
+          <p class="entry__meta"><span>V-01</span> Personal project · 2026 · Individual</p>
+          <h3 class="entry__title">Chattogram District April Heat Surface, 2015–2025 (3D LST)</h3>
+        </div>
+        <div>
+          <p>I built yearly 30 m April land surface temperature composites for Chattogram District from 91 Landsat 8/9 scenes and turned them into an animated 3D heat surface in QGIS. The city core, the port/EPZ belt and the airport are the hottest ground every year. The district median swings between 33.0 °C and 37.3 °C with pre-monsoon weather, with no warming trend.</p>
+          <p class="tags">Individual · 2026 · QGIS 3D &amp; PyQGIS · Python (GDAL, rasterio) · FFmpeg</p>
+          <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/chattogram-lst-3d">View details &amp; code</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="media media--side">
+      <div class="media__frame">
+        <video width="960" height="1200" muted loop playsinline preload="none" poster="images/river-pulse-canada-2025.jpg" data-autoplay aria-label="Animated 3D map of every mapped river in Canada through 2025, with wall height showing daily discharge and colour showing estimated water temperature.">
+          <source src="images/river-pulse-canada-2025.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media__text">
+        <p class="entry__meta"><span>V-02</span> Personal project · 2026 · Individual</p>
+        <h3 class="entry__title">Canada's River Pulse 2025</h3>
+        <p>I animated every mapped river in Canada for every day of 2025 as 3D walls whose height is daily discharge and whose colour is estimated water temperature. The animation combines HydroRIVERS, GloFAS and NASA POWER data, rendered with PyQGIS. Total flow to the sea swings 5.7-fold, from about 39,100 m³/s in February to about 221,100 m³/s at the end of June.</p>
+        <p class="tags">Individual · 2026 · PyQGIS · Python (NumPy) · FFmpeg</p>
+        <p class="credit">Design after Aaron J. Becker's <cite>South Asia's River Pulse</cite>.</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/river-pulse-canada-2025">View details &amp; code</a></p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     04 RESEARCH PROJECTS
+     ------------------------------------------------------------
+     TEMPLATE: to add a research entry, copy everything from
+     <article class="plate"> to </article> below, paste it after
+     the last entry, and change the words. Keep the quotes " ".
+     For a tall map, use  class="plate plate--side"  instead.
+
+     <article class="plate">
+       <p class="plate__id">R-05</p>
+       <h3 class="plate__title">Title of the study</h3>
+       <figure class="frame">
+         <a href="images/REPO-NAME.jpg"><img src="images/REPO-NAME.jpg" width="2000" height="1200" loading="lazy" alt="Describe the map in one sentence"></a>
+       </figure>
+       <div class="plate__body">
+         <dl class="strip">
+           <div><dt>Study area</dt><dd>Place</dd></div>
+           <div><dt>Data</dt><dd>Data used</dd></div>
+           <div><dt>Method</dt><dd>Method used</dd></div>
+           <div><dt>Status</dt><dd><span class="status">Manuscript in preparation</span></dd></div>
+         </dl>
+         <p class="plate__summary">Two or three sentences.</p>
+         <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/REPO-NAME">View details</a></p>
+       </div>
+     </article>
+
+     (width and height = the image's pixel size; right-click the
+     image > Properties > Details shows it.)
+     ============================================================ -->
+<section id="research" class="section" aria-labelledby="research-h">
+  <h2 id="research-h" class="section__title"><span class="section__num">04</span> Research projects</h2>
+  <div class="section__body">
+
+    <article class="plate plate--noimage" id="r-ml-uhi">
+      <p class="plate__id">R-00</p>
+      <h3 class="plate__title">Machine-Learning-Based Assessment and Mitigation Scenario Modelling of Urban Heat Islands in Coastal Cities of Bangladesh</h3>
+      <div class="plate__body">
+        <dl class="strip">
+          <div><dt>Study area</dt><dd>Coastal cities of Bangladesh (high-density areas)</dd></div>
+          <div><dt>Method</dt><dd>Random Forest · Support Vector Machine (SVM)</dd></div>
+          <div><dt>Since</dt><dd>December 2025</dd></div>
+          <div><dt>Status</dt><dd><span class="status status--live">In progress · data analysis</span></dd></div>
+        </dl>
+        <p class="plate__summary">Developing a predictive model with Random Forest and Support Vector Machine (SVM) to simulate urban cooling strategies for high-density coastal areas.</p>
+      </div>
+    </article>
+
+    <article class="plate" id="r-suhi">
+      <p class="plate__id">R-01</p>
+      <h3 class="plate__title">Surface Urban Heat Islands in Two Coastal Megacities: Chittagong vs Karachi</h3>
+      <figure class="frame">
+        <a href="images/suhi-chittagong-karachi.jpg"><img src="images/suhi-chittagong-karachi.jpg" width="1542" height="1083" loading="lazy" alt="Study area map: the city boundaries of Chittagong (Bangladesh) and Karachi (Pakistan), with an inset locating both coastal cities in South Asia."></a>
+        <figcaption>Fig. R-01 · Study area</figcaption>
+      </figure>
+      <div class="plate__body">
+        <dl class="strip">
+          <div><dt>Study area</dt><dd>Chittagong (humid) and Karachi (arid)</dd></div>
+          <div><dt>Data</dt><dd>MODIS land surface temperature, land cover, sea-level-rise exposure, 2000–2024</dd></div>
+          <div><dt>Method</dt><dd>Automated Google Earth Engine workflow</dd></div>
+          <div><dt>Status</dt><dd><span class="status">Presented at conference (Nov 2025)</span> <span class="status">Manuscript in preparation</span></dd></div>
+        </dl>
+        <p class="plate__summary">An automated Google Earth Engine workflow tracks surface urban heat island intensity from 2000 to 2024 in a humid (Chittagong) and an arid (Karachi) coastal megacity. It uses MODIS land surface temperature, land cover and sea-level-rise exposure. The work has been presented at a conference and a manuscript is in preparation; results will be shared after publication.</p>
+        <p class="actions">
+          <a class="btn" href="https://github.com/ChinmoyGhoshShuvo/suhi-chittagong-karachi">View details</a>
+          <a class="textlink" href="#presentations">Conference presentation ↓</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="plate" id="r-khagrachhari">
+      <p class="plate__id">R-02</p>
+      <h3 class="plate__title">Land-Use Change and Ecosystem Service Value in Khagrachhari, Chittagong Hill Tracts (2000–2025)</h3>
+      <figure class="frame">
+        <a href="images/khagrachhari-ecosystem-service-value.jpg"><img src="images/khagrachhari-ecosystem-service-value.jpg" width="2000" height="944" loading="lazy" alt="Six land-cover maps of Khagrachhari District for 2000, 2005, 2010, 2015, 2020 and 2025, classed as forest, water, agriculture, barren and built-up, from random-forest classification of Landsat images."></a>
+        <figcaption>Fig. R-02 · Random-forest land-cover classifications, 2000–2025 (Landsat)</figcaption>
+      </figure>
+      <div class="plate__body">
+        <dl class="strip">
+          <div><dt>Study area</dt><dd>Khagrachhari District, Chittagong Hill Tracts</dd></div>
+          <div><dt>Data</dt><dd>Landsat, 2000–2025</dd></div>
+          <div><dt>Method</dt><dd>Google Earth Engine · condition-adjusted equivalent-factor valuation</dd></div>
+          <div><dt>Status</dt><dd><span class="status">Manuscript in preparation</span></dd></div>
+        </dl>
+        <p class="plate__summary">A 25-year Landsat and Google Earth Engine study maps land-cover change in a forested hill district of Bangladesh and values its ecosystem services with a condition-adjusted equivalent-factor method. It also models how that value flows from rural upazilas to the urban core across rugged terrain. A manuscript is in preparation; results will be shared after publication.</p>
+        <p class="actions">
+          <a class="btn" href="https://github.com/ChinmoyGhoshShuvo/khagrachhari-ecosystem-service-value">View details</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="plate" id="r-thesis">
+      <p class="plate__id">R-03</p>
+      <h3 class="plate__title">Ranking Renewable Energy Sources for Bangladesh (AHP)</h3>
+      <figure class="frame">
+        <a href="images/bangladesh-renewable-energy-ahp.jpg"><img src="images/bangladesh-renewable-energy-ahp.jpg" width="1827" height="744" loading="lazy" alt="Chart of the AHP criteria weights and the final ranking of solar, biomass, wind and tidal energy for Bangladesh."></a>
+        <figcaption>Fig. R-03 · AHP criteria weights and final ranking</figcaption>
+      </figure>
+      <div class="plate__body">
+        <dl class="strip">
+          <div><dt>Study area</dt><dd>Bangladesh</dd></div>
+          <div><dt>Data</dt><dd>Survey: 188 public and 21 expert responses</dd></div>
+          <div><dt>Method</dt><dd>Analytic Hierarchy Process (AHP)</dd></div>
+          <div><dt>Type</dt><dd>Bachelor's thesis · 2024 · Individual</dd></div>
+        </dl>
+        <p class="plate__summary">For my bachelor's thesis at KUET, I combined a survey of the public and sector experts with an Analytic Hierarchy Process that scored solar, biomass, wind and tidal energy on maturity, reliability, cost and sustainability. Solar ranked first (priority 0.481) and stayed first in a 2026 re-check of the AHP matrices. The survey (188 public and 21 expert responses) found that financial constraints were the most-cited barrier to adoption.</p>
+        <p class="tags">Individual · 2024 · AHP · Excel · GIS · Python</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/bangladesh-renewable-energy-ahp">View details</a></p>
+      </div>
+    </article>
+
+    <article class="plate plate--side" id="r-groundwater">
+      <p class="plate__id">R-04</p>
+      <h3 class="plate__title">Groundwater Potential Mapping of Bangladesh (Random Forest vs ANN)</h3>
+      <figure class="frame">
+        <a href="images/bangladesh-groundwater-potential-ml.jpg"><img src="images/bangladesh-groundwater-potential-ml.jpg" width="1269" height="1643" loading="lazy" alt="Final groundwater potential map of Bangladesh from the Random Forest model, with district names and five classes from very high to very low."></a>
+        <figcaption>Fig. R-04 · Final groundwater potential map (Random Forest)</figcaption>
+      </figure>
+      <div class="plate__body">
+        <dl class="strip">
+          <div><dt>Study area</dt><dd>Bangladesh</dd></div>
+          <div><dt>Data</dt><dd>19 factor layers · 2,144 sample points</dd></div>
+          <div><dt>Method</dt><dd>Random Forest vs Artificial Neural Network</dd></div>
+          <div><dt>Status</dt><dd><span class="status">Manuscript ready</span></dd></div>
+        </dl>
+        <p class="plate__summary">This project mapped national groundwater potential from 19 topographic, climatic, socio-economic and geological factors, using 2,144 sample points to train Random Forest and neural-network models. Random Forest was the more accurate model (AUC 0.97 vs 0.91). Its map shows 35.73% of the country with high or very high potential, while the hill districts have the lowest potential.</p>
+        <p class="tags">GIS · Python · SPSS</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/bangladesh-groundwater-potential-ml">View details</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================
+     05 ACADEMIC PROJECTS
+     ------------------------------------------------------------
+     TEMPLATE: to add an academic project, copy everything from
+     <article class="entry entry--wide"> to </article> below and
+     paste it at the end of the list (just before the line that
+     says END OF ACADEMIC PROJECTS).
+
+     <article class="entry entry--wide">
+       <figure class="frame">
+         <a href="images/REPO-NAME.jpg"><img src="images/REPO-NAME.jpg" width="1600" height="900" loading="lazy" alt="Describe the image in one sentence"></a>
+       </figure>
+       <div class="entry__text">
+         <p class="entry__meta"><span>P-08</span> Studio project</p>
+         <h3 class="entry__title">Project title</h3>
+         <p>Summary from card_v2.md.</p>
+         <p class="tags">Group · Tool one · Tool two</p>
+         <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/REPO-NAME">View details</a></p>
+       </div>
+     </article>
+
+     Button text: use  View details  normally. Use  View details &amp; code
+     ONLY if the repository contains the project's own analysis code
+     (not just a chart-redrawing script).
+
+     Layout options: "entry entry--wide" (image left),
+     "entry entry--wide entry--flip" (image right),
+     "entry entry--side" (for tall/portrait maps).
+     For a PDF report instead of GitHub, put the PDF in the
+     website folder and use  href="report-name.pdf"  and the
+     button text  View report (PDF).
+     ============================================================ -->
+<section id="academic" class="section" aria-labelledby="academic-h">
+  <h2 id="academic-h" class="section__title"><span class="section__num">05</span> Academic projects</h2>
+  <div class="section__body">
+
+    <div class="pair">
+      <article class="entry entry--tall">
+        <figure class="frame">
+          <a href="images/dhaka-division-location-theory-spatial-analysis.jpg"><img src="images/dhaka-division-location-theory-spatial-analysis.jpg" width="1364" height="1733" loading="lazy" alt="Hotspot map of upazila population in Dhaka Division, Bangladesh."></a>
+          <figcaption>Fig. P-01 · Population hotspot map</figcaption>
+        </figure>
+        <div class="entry__text">
+          <p class="entry__meta"><span>P-01</span> Studio project</p>
+          <h3 class="entry__title">Location Theories vs Reality in Dhaka Division</h3>
+          <p>This project tested classic location theories against upazila population patterns in Dhaka Division using hotspot analysis, Local Moran's I clustering and pattern mapping. Narayanganj Sadar, Savar and Gazipur Sadar emerged as 99%-confidence hotspots around textile hubs, with no regular geometric hierarchy around them. The pattern fits growth pole theory rather than central place theory.</p>
+          <p class="tags">[TO FILL: individual or group] · GIS · Hotspot analysis · Local Moran's I</p>
+          <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/dhaka-division-location-theory-spatial-analysis">View details</a></p>
+        </div>
+      </article>
+
+      <article class="entry entry--tall">
+        <figure class="frame">
+          <a href="images/barishal-padma-bridge-route-analysis.jpg"><img src="images/barishal-padma-bridge-route-analysis.jpg" width="1332" height="1693" loading="lazy" alt="Map of the existing, shortest and potential road routes from Barishal to the Padma Bridge link road."></a>
+          <figcaption>Fig. P-02 · Route map</figcaption>
+        </figure>
+        <div class="entry__text">
+          <p class="entry__meta"><span>P-02</span> Studio project</p>
+          <h3 class="entry__title">Barishal to Padma Bridge Route Selection (GIS Network Analysis + AHP)</h3>
+          <p>Using ArcGIS network analysis, this project compared the existing, shortest and a potential route from Barishal to the Padma Bridge link road by length, time, cost and road class. It then ranked the three with a five-factor AHP (CR 5.4%). The existing route scored highest (0.768) because it is the only one built mainly on trunk roads.</p>
+          <p class="tags">[TO FILL: individual or group] · ArcGIS Network Analyst · AHP · Excel</p>
+          <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/barishal-padma-bridge-route-analysis">View details</a></p>
+        </div>
+      </article>
+    </div>
+
+    <article class="entry entry--wide entry--flip">
+      <figure class="frame">
+        <a href="images/khulna-satellite-town-site-suitability.jpg"><img src="images/khulna-satellite-town-site-suitability.jpg" width="1878" height="708" loading="lazy" alt="Chart of weighted suitability scores for the five shortlisted satellite-town sites in the KDA planning area, Khulna."></a>
+        <figcaption>Fig. P-03 · Weighted suitability scores</figcaption>
+      </figure>
+      <div class="entry__text">
+        <p class="entry__meta"><span>P-03</span> Studio project (URP 2212)</p>
+        <h3 class="entry__title">Satellite Town Site Suitability, Khulna (KDA Planning Area)</h3>
+        <p>In a 7-member studio team, we screened 10 candidate sites near Khulna and ranked 5 of them with a weighted multi-factor analysis of 18 sub-factors, including accessibility, flood level, salinity and services. Site 9, beside the Khulna City Bypass, ranked first (6.54 out of 10). We then produced a detailed site analysis and a 167-acre land budget for about 58,450 residents.</p>
+        <p class="tags">Group · Google Earth Pro · Excel · Python</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/khulna-satellite-town-site-suitability">View details</a></p>
+      </div>
+    </article>
+
+    <div class="pair">
+      <article class="entry entry--tall">
+        <figure class="frame">
+          <a href="images/bagerhat-heritage-conservation-dpp-tor.jpg"><img src="images/bagerhat-heritage-conservation-dpp-tor.jpg" width="1200" height="1728" loading="lazy" alt="Study area map of Bagerhat District showing the project thanas: Bagerhat Sadar, Kachua, Chitalmari and Mongla."></a>
+          <figcaption>Fig. P-04 · Study area, Bagerhat</figcaption>
+        </figure>
+        <div class="entry__text">
+          <p class="entry__meta"><span>P-04</span> Studio project (URP 4162/4262)</p>
+          <h3 class="entry__title">Bagerhat Heritage Conservation: DPP and Terms of Reference</h3>
+          <p>Our 6-member team drafted a government-format Development Project Proposal (DPP) and a consultant Terms of Reference (ToR) for a heritage conservation master plan for the Mosque City of Bagerhat. The package includes a BDT 300 lakh budget, a log frame, staffing and a 36-month phased work plan.</p>
+          <p class="tags">Group · Word &amp; Excel · GIS</p>
+          <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/bagerhat-heritage-conservation-dpp-tor">View details</a></p>
+        </div>
+      </article>
+
+      <article class="entry entry--tall">
+        <figure class="frame">
+          <a href="images/chayghoria-participatory-planning-pra.jpg"><img src="images/chayghoria-participatory-planning-pra.jpg" width="1357" height="1756" loading="lazy" alt="Social map of Chayghoria village, Batiaghata, Khulna, made with residents during the participatory rural appraisal."></a>
+          <figcaption>Fig. P-05 · Social map, Chayghoria</figcaption>
+        </figure>
+        <div class="entry__text">
+          <p class="entry__meta"><span>P-05</span> Studio project</p>
+          <h3 class="entry__title">Participatory Rural Appraisal, Chayghoria Village (Khulna)</h3>
+          <p>I led a 5-member PRA team working with residents of a flood-prone village on the Rupsa River. Together we built social, resource and mobility maps, a transect walk and a crop calendar, and ranked local problems. Residents ranked lack of flood management as the most pressing issue, so we designed a 5.3 km community-built drainage network and estimated its cost.</p>
+          <p class="tags">Group (team leader) · PRA field tools · Excel · Python</p>
+          <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/chayghoria-participatory-planning-pra">View details</a></p>
+        </div>
+      </article>
+    </div>
+
+    <article class="entry entry--wide">
+      <figure class="frame">
+        <a href="images/khulna-boyra-road-traffic-survey.jpg"><img src="images/khulna-boyra-road-traffic-survey.jpg" width="1552" height="698" loading="lazy" alt="Chart of traffic intensity in passenger car units per hour at the three surveyed intersections on the Notun Rasta to Boyra corridor, Khulna."></a>
+        <figcaption>Fig. P-06 · Traffic intensity by intersection (PCU/h)</figcaption>
+      </figure>
+      <div class="entry__text">
+        <p class="entry__meta"><span>P-06</span> Studio project (URP 3232)</p>
+        <h3 class="entry__title">Road Cross-Section and Traffic Survey, Khulna</h3>
+        <p>Our 5-member studio team surveyed a 3.9 km urban corridor in Khulna. We drew road cross-sections, ran classified traffic counts at three intersections over six time slots, and carried out speed, headway and moving-observer surveys. The Baikali highway intersection carried the most traffic (up to 4,060 PCU/h), and the corridor flow measured 1,889 PCU/h.</p>
+        <p class="tags">Group · Field survey · Google Earth · Excel</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/khulna-boyra-road-traffic-survey">View details</a></p>
+      </div>
+    </article>
+
+    <article class="entry entry--wide entry--flip">
+      <figure class="frame">
+        <a href="images/sixty-dome-mosque-landscape-plan.jpg"><img src="images/sixty-dome-mosque-landscape-plan.jpg" width="1840" height="790" loading="lazy" alt="Collage of 3D-modelled visitor-facility proposals for the Sixty Dome Mosque complex, Bagerhat."></a>
+        <figcaption>Fig. P-07 · Overview of the proposals</figcaption>
+      </figure>
+      <div class="entry__text">
+        <p class="entry__meta"><span>P-07</span> Studio project (URP 2252)</p>
+        <h3 class="entry__title">Landscape Plan for the Sixty Dome Mosque, Bagerhat</h3>
+        <p>For a landscape planning studio, our team surveyed a UNESCO World Heritage mosque complex and mapped its land use, sun path and wind. We identified eight gaps in visitor facilities, from ablution space and toilets to parking, lighting and security. We then designed and modelled in 3D a heritage-sensitive solution for each one.</p>
+        <p class="tags">Group · 3D modelling · 2D site mapping · Google Earth</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/sixty-dome-mosque-landscape-plan">View details</a></p>
+      </div>
+    </article>
+    <article class="entry entry--wide">
+      <figure class="frame">
+        <a href="images/khulna-ecosystem-services-disservices.jpg"><img src="images/khulna-ecosystem-services-disservices.jpg" width="1600" height="884" loading="lazy" alt="Collage of six field photos from Khulna wards 17 to 19, labelled provisioning, cultural, regulating and supporting services, and two disservices such as a littered drain and a weed-choked pond."></a>
+        <figcaption>Fig. P-08 · Field photos of services and disservices</figcaption>
+      </figure>
+      <div class="entry__text">
+        <p class="entry__meta"><span>P-08</span> Studio project (URP 4142)</p>
+        <h3 class="entry__title">Ecosystem Services and Disservices in Khulna City (Wards 17–19)</h3>
+        <p>We surveyed 60 high- and low-income households in three Khulna wards to see who benefits from urban ecosystem services and who bears the disservices. Ward 18 benefits most overall, while Ward 19 benefits most from regulating services but is hit hardest by disservices such as waterlogging and mosquitoes. Most residents see the benefits as unevenly shared and do not know of any environmental protection law.</p>
+        <p class="tags">Group (6 members) · Questionnaire survey · Excel · Field photography</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/khulna-ecosystem-services-disservices">View details</a></p>
+      </div>
+    </article>
+
+    <article class="entry entry--side">
+      <figure class="frame">
+        <a href="images/khulna-carbon-footprint-mapping.jpg"><img src="images/khulna-carbon-footprint-mapping.jpg" width="1135" height="1600" loading="lazy" alt="Map of ward-wise carbon emission in the study area, Khulna: Ward 17 high, Ward 19 moderate and Ward 18 low."></a>
+        <figcaption>Fig. P-09 · Ward-wise carbon emission</figcaption>
+      </figure>
+      <div class="entry__text">
+        <p class="entry__meta"><span>P-09</span> Studio project (URP 4142)</p>
+        <h3 class="entry__title">Carbon Footprint Mapping of Wards 17–19, Khulna City</h3>
+        <p>We surveyed 108 samples in three Khulna wards and converted fuels, electricity, water, construction materials and road surfaces into CO₂ equivalents with DEFRA 2022 factors. Road circulation produces about 78% of the emission, Ward 17 has the highest settlement emissions, and almost all housing emission comes from construction rather than daily use. Satellite land-cover maps for 2019–2022 show built-up land replacing barren land and vegetation.</p>
+        <p class="tags">Group (6 members) · Excel · GIS · Python</p>
+        <p class="actions"><a class="btn" href="https://github.com/ChinmoyGhoshShuvo/khulna-carbon-footprint-mapping">View details</a></p>
+      </div>
+    </article>
+
+    <article class="entry entry--noimage">
+      <div class="entry__text">
+        <p class="entry__meta"><span>P-10</span> Studio project</p>
+        <h3 class="entry__title">Site Suitability Analysis for the Development of Economic Zones in Bangladesh</h3>
+        <p>A studio project that used GIS-based suitability analysis to identify locations in Bangladesh suited to new economic zones.</p>
+        <p class="tags">GIS · Multi-criteria suitability analysis</p>
+      </div>
+    </article>
+    <!-- END OF ACADEMIC PROJECTS -->
+
+  </div>
+</section>
+
+<!-- ============================================================
+     06 PRESENTATIONS
+     ------------------------------------------------------------
+     TEMPLATE: copy one <li> ... </li> block inside the list and
+     change the text. Newest first.
+     ============================================================ -->
+<section id="presentations" class="section" aria-labelledby="presentations-h">
+  <h2 id="presentations-h" class="section__title"><span class="section__num">06</span> Presentations</h2>
+  <div class="section__body">
+    <div class="source-note">
+      <p class="source-note__label">Source note · Conference presentations</p>
+      <ol class="citations">
+        <li>
+          <p>Ahmed, S., &amp; <strong>Shuvo, C. G.</strong> (2025, November). <cite>Dynamics of Surface Urban Heat Island between Contrasting Coastal Climates: Learnings from V20 Country's Megacities, Chittagong and Karachi for Climate Adaptation Using an Automated Cloud Computational Platform.</cite> Oral presentation, International Workshop on Adaptation Technologies for Climate Change, Thailand.</p>
+          <p class="citations__note"><span class="status">Manuscript in preparation for journal submission</span> <a class="textlink" href="https://github.com/ChinmoyGhoshShuvo/suhi-chittagong-karachi">Project page</a> · <a class="textlink" href="#r-suhi">Research entry ↑</a></p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     07 LEADERSHIP & ACTIVITIES (certificates)
+     ------------------------------------------------------------
+     TEMPLATE: copy one <article class="cert"> ... </article>
+     block and change the words. The certificate picture goes in
+     images/ (landscape scan, about 1600 px wide, under 300 KB).
+     Roles without a certificate go in the list at the bottom.
+     ============================================================ -->
+<section id="activities" class="section" aria-labelledby="activities-h">
+  <h2 id="activities-h" class="section__title"><span class="section__num">07</span> Activities</h2>
+  <div class="section__body">
+    <p class="section__lede">Leadership, volunteering and scouting. Tap a certificate to see it full size.</p>
+
+    <div class="certs">
+      <article class="cert">
+        <button class="cert__img" type="button" data-full="images/cert-urp-association-vice-president.jpg" aria-label="View certificate full size: Vice President, URP Association, KUET">
+          <img src="images/cert-urp-association-vice-president.jpg" width="1600" height="1117" loading="lazy" alt="Certificate of Recognition from KUET awarded to Chinmoy Ghosh Shuvo for his service as Vice President of the URP Association, 2021–2022 academic year.">
+        </button>
+        <div class="cert__text">
+          <p class="cert__when">Mar 2023 – Feb 2024</p>
+          <h3 class="cert__role">Vice President</h3>
+          <p class="cert__org">URP Association, KUET</p>
+          <p class="cert__note">Certificate of Recognition (2021–2022 academic year)</p>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert__img" type="button" data-full="images/cert-kuet-adventure-club-general-secretary.jpg" aria-label="View certificate full size: General Secretary, KUET Adventure Club">
+          <img src="images/cert-kuet-adventure-club-general-secretary.jpg" width="1600" height="1149" loading="lazy" alt="Certificate of Appreciation presented to Planner Chinmoy Ghosh Shuvo as General Secretary for outstanding service to KUET Adventure Club, signed March 2024.">
+        </button>
+        <div class="cert__text">
+          <p class="cert__when">Feb 2023 – Apr 2024</p>
+          <h3 class="cert__role">General Secretary</h3>
+          <p class="cert__org">KUET Adventure Club</p>
+          <p class="cert__note">Certificate of Appreciation (March 2024)</p>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert__img" type="button" data-full="images/cert-plannation-2-volunteer.jpg" aria-label="View certificate full size: Volunteer, PLANNATION 2.0">
+          <img src="images/cert-plannation-2-volunteer.jpg" width="1600" height="1190" loading="lazy" alt="KUET Certificate of Participation for volunteering activities at PLANNATION 2.0, organised by the Department of Urban and Regional Planning.">
+        </button>
+        <div class="cert__text">
+          <p class="cert__when">KUET</p>
+          <h3 class="cert__role">Volunteer</h3>
+          <p class="cert__org">PLANNATION 2.0, Dept. of Urban and Regional Planning</p>
+          <p class="cert__note">Certificate of Participation</p>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert__img" type="button" data-full="images/cert-bangladesh-saanso-scout-jamboree-2014.jpg" aria-label="View certificate full size: 9th Bangladesh and 1st SAANSO Scout Jamboree">
+          <img src="images/cert-bangladesh-saanso-scout-jamboree-2014.jpg" width="1600" height="1199" loading="lazy" alt="Participant certificate of the 9th Bangladesh and 1st SAANSO Scout Jamboree, National Scout Training Centre, Mouchak, Gazipur, 4–11 April 2014.">
+        </button>
+        <div class="cert__text">
+          <p class="cert__when">Apr 2014</p>
+          <h3 class="cert__role">Participant</h3>
+          <p class="cert__org">9th Bangladesh &amp; 1st SAANSO Scout Jamboree, Mouchak, Gazipur</p>
+          <p class="cert__note">Participant Certificate</p>
+        </div>
+      </article>
+
+      <article class="cert">
+        <button class="cert__img" type="button" data-full="images/cert-kumarkhali-upazila-scout-camporee-2014.jpg" aria-label="View certificate full size: Upazila Scout Camporee 2014, Kumarkhali">
+          <img src="images/cert-kumarkhali-upazila-scout-camporee-2014.jpg" width="1600" height="1152" loading="lazy" alt="Bangla-language certificate from Bangladesh Scouts, Kumarkhali Upazila, for taking part in the four-day Upazila Scouts Camporee 2014, 18–21 December 2014.">
+        </button>
+        <div class="cert__text">
+          <p class="cert__when">Dec 2014</p>
+          <h3 class="cert__role">Scout</h3>
+          <p class="cert__org">Upazila Scout Camporee 2014, Bangladesh Scouts, Kumarkhali</p>
+          <p class="cert__note">Certificate of participation (in Bangla)</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="roles">
+      <h3 class="skills__title">Other roles</h3>
+      <dl class="facts">
+        <div><dt>Current</dt><dd>Joint Secretary, Alumni Association of KUET Planners</dd></div>
+        <div><dt>Current</dt><dd>Member, Bangladesh Institute of Planners (BIP)</dd></div>
+        <div><dt>Oct 2021 – Jan 2023</dt><dd>Campus Coordinator, Green Voice</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Full-size certificate viewer (opened by the script) -->
+<dialog class="lightbox" aria-label="Certificate">
+  <button class="lightbox__close" type="button" aria-label="Close">Close ✕</button>
+  <img class="lightbox__img" src="" alt="">
+</dialog>
+
+<!-- ============================================================
+     08 CONTACT (sheet colophon)
+     ============================================================ -->
+<footer id="contact" class="colophon" aria-labelledby="contact-h">
+  <div class="colophon__inner">
+    <h2 id="contact-h" class="section__title"><span class="section__num">08</span> Contact</h2>
+    <dl class="colophon__grid">
+      <div><dt>Email</dt><dd><a href="mailto:chinmoyghoshshuvo@gmail.com">chinmoyghoshshuvo@gmail.com</a></dd></div>
+      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/chinmoyghosh034">linkedin.com/in/chinmoyghosh034</a></dd></div>
+      <div><dt>GitHub</dt><dd><a href="https://github.com/ChinmoyGhoshShuvo">github.com/ChinmoyGhoshShuvo</a></dd></div>
+      <div><dt>CV</dt><dd><a href="Chinmoy_Ghosh_CV.pdf">Download (PDF)</a></dd></div>
+    </dl>
+    <p class="colophon__note">Chinmoy Ghosh Shuvo · Hand-written HTML and CSS · Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     Script: mobile menu, videos, and all the scroll motion.
+     The page still works without it: everything is visible,
+     just without the movement. Visitors who ask their device for
+     "reduced motion" get a calm version automatically.
+     ============================================================ -->
+<script>
+(function () {
+  var doc = document.documentElement;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO = 'IntersectionObserver' in window;
+
+  /* ---------- Mobile menu ---------- */
+  var btn = document.querySelector('.menu-toggle');
+  var nav = document.getElementById('site-nav');
+  if (btn && nav) {
+    btn.hidden = false;
+    nav.classList.add('is-collapsible');
+    var setOpen = function (open) {
+      btn.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('is-open', open);
+    };
+    btn.addEventListener('click', function () { setOpen(btn.getAttribute('aria-expanded') !== 'true'); });
+    nav.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+  }
+
+  /* ---------- Videos play only while on screen ---------- */
+  var videos = document.querySelectorAll('video[data-autoplay]');
+  if (videos.length && hasIO && !reduce) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var v = entry.target;
+        if (entry.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else { v.pause(); }
+      });
+    }, { threshold: 0.3 });
+    videos.forEach(function (v) { vio.observe(v); });
+  }
+
+  /* ---------- Reveal on scroll (fade/slide + map-frame wipe) ---------- */
+  var revealSel = [
+    '.section__title', '.section__lede', '.about__bio', '.facts > div', '.skills__grid > div',
+    '.tl__item', '.media', '.plate', '.entry', '.source-note', '.cert', '.roles',
+    '.stat', '.colophon__grid > div', '.colophon__note'
+  ].join(',');
+  var items = document.querySelectorAll(revealSel);
+  var frames = document.querySelectorAll('.frame a, .media__frame, .cert__img');
+  if (hasIO && !reduce) {
+    items.forEach(function (el) {
+      el.classList.add('rv');
+      var i = Array.prototype.indexOf.call(el.parentNode.children, el);
+      el.style.setProperty('--d', Math.min(i, 6) * 70 + 'ms');
+    });
+    var rio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('in'); rio.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    items.forEach(function (el) { rio.observe(el); });
+    /* a fully clipped frame never counts as "visible", so watch its parent instead */
+    var fio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.querySelectorAll(':scope > .wipe').forEach(function (w) { w.classList.add('in'); });
+        fio.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0 });
+    frames.forEach(function (el) { el.classList.add('wipe'); fio.observe(el.parentNode); });
+  }
+
+  /* ---------- Numbers count up ---------- */
+  var counters = document.querySelectorAll('[data-count]');
+  if (counters.length && hasIO && !reduce) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target, end = parseFloat(el.getAttribute('data-count'));
+        var dec = parseInt(el.getAttribute('data-decimals') || '0', 10), t0 = null, dur = 1400;
+        var step = function (t) {
+          if (!t0) t0 = t;
+          var k = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+          el.textContent = (end * e).toFixed(dec);
+          if (k < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        cio.unobserve(el);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { el.textContent = (0).toFixed(parseInt(el.getAttribute('data-decimals') || '0', 10)); cio.observe(el); });
+  }
+
+  /* ---------- Coordinates readout cycles through study areas ---------- */
+  var coord = document.querySelector('[data-coord]');
+  var places = [
+    'Chattogram · 22.3569° N · 91.7832° E',
+    'Khulna · 22.8456° N · 89.5403° E',
+    'Karachi · 24.8607° N · 67.0011° E',
+    'Khagrachhari · 23.1193° N · 91.9847° E',
+    'Dhaka · 23.8103° N · 90.4125° E'
+  ];
+  if (coord) {
+    coord.textContent = places[0];
+    if (!reduce) {
+      var pi = 0, glyphs = '0123456789°.·';
+      setInterval(function () {
+        if (document.hidden) return;
+        pi = (pi + 1) % places.length;
+        var target = places[pi], frame = 0;
+        var scramble = setInterval(function () {
+          frame++;
+          var out = '';
+          for (var i = 0; i < target.length; i++) {
+            var c = target.charAt(i);
+            out += (i < frame * 2 || c === ' ') ? c : glyphs.charAt(Math.floor(Math.random() * glyphs.length));
+          }
+          coord.textContent = out;
+          if (frame * 2 >= target.length) { clearInterval(scramble); coord.textContent = target; }
+        }, 30);
+      }, 3200);
+    }
+  }
+
+  /* ---------- Scroll-linked motion: progress bar, parallax, timeline, active menu ---------- */
+  var bar = document.querySelector('.progress__bar');
+  var contours = document.querySelector('.hero__contours');
+  var portrait = document.querySelector('.hero__photo');
+  var timeline = document.querySelector('.timeline');
+  var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav a[href^="#"]'));
+  var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  var ticking = false;
+
+  function onScroll() {
+    ticking = false;
+    var y = window.scrollY || window.pageYOffset;
+    var h = doc.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(y / h, 1) : 0) + ')';
+
+    if (!reduce) {
+      if (contours && y < 1200) contours.style.transform = 'translate3d(0,' + (y * 0.35) + 'px,0) rotate(' + (y * 0.02) + 'deg)';
+      if (portrait && y < 1200) portrait.style.transform = 'translate3d(0,' + (y * -0.06) + 'px,0)';
+    }
+    if (timeline) {
+      var r = timeline.getBoundingClientRect(), vh = window.innerHeight;
+      var p = (vh * 0.7 - r.top) / r.height;
+      timeline.style.setProperty('--fill', Math.max(0, Math.min(1, p)).toFixed(3));
+    }
+
+    var current = -1;
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i] && targets[i].getBoundingClientRect().top < window.innerHeight * 0.35) current = i;
+    }
+    links.forEach(function (a, i) { a.classList.toggle('is-active', i === current); });
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  /* ---------- Certificates: gentle 3D tilt + full-size viewer ---------- */
+  var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  document.querySelectorAll('.cert__img').forEach(function (b) {
+    if (fine && !reduce) {
+      b.addEventListener('pointermove', function (e) {
+        var r = b.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        b.style.transform = 'perspective(800px) rotateX(' + (-y * 8) + 'deg) rotateY(' + (x * 10) + 'deg) scale(1.02)';
+      });
+      b.addEventListener('pointerleave', function () { b.style.transform = ''; });
+    }
+  });
+  var box = document.querySelector('.lightbox');
+  if (box && typeof box.showModal === 'function') {
+    var big = box.querySelector('.lightbox__img');
+    document.querySelectorAll('.cert__img').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var img = b.querySelector('img');
+        big.src = b.getAttribute('data-full'); big.alt = img ? img.alt : '';
+        box.showModal();
+      });
+    });
+    box.querySelector('.lightbox__close').addEventListener('click', function () { box.close(); });
+    box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+  } else {
+    /* old browsers: open the picture on its own */
+    document.querySelectorAll('.cert__img').forEach(function (b) {
+      b.addEventListener('click', function () { window.location.href = b.getAttribute('data-full'); });
+    });
+  }
+})();
+</script>
+</body>
+</html>
