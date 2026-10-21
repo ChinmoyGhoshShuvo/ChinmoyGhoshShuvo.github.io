@@ -12,8 +12,9 @@
   --hair: #d8d3c8;           /* light hairline */
   --accent: #c2410c;         /* heat orange, 5.2:1 on paper (WCAG AA) */
   --accent-dark: #9a3412;
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --mono: "IBM Plex Mono", ui-monospace, Consolas, "Courier New", monospace;
+  /* All text uses Cambria (Caladea = free look-alike for devices without Cambria) */
+  --serif: Cambria, Caladea, Georgia, "Times New Roman", serif;
+  --mono: Cambria, Caladea, Georgia, "Times New Roman", serif;
   --gutter: 16px;
   --head: 52px;
 }
